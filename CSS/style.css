@@ -1,15 +1,46 @@
-html {font-size: 10px;
-}
 
-div {font-size: 10em;
-}
 
-h1 {color: rgb(132, 0, 255);
+h1 {
+    color: rgb(132, 0, 255);
     font-size: 3rem;
     background-color: royalblue;
-    margin: 20%;
+    /*border: 9px dotted gray */
+    border-width: 9px; 
+    border-style: dotted;
+    border-color: grey;
+    width: 50%;
 }
 
+h2 {
+    font-family: 'Caveat', cursive , sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid blue;
+}
+p {
+    background-color: black;
+    color: white;
+}
+
+span {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: yellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+ul {
+    font-size: 50px;
+    list-style: none;
+}
+
+ol {
+    font-size: 50px;
+    list-style: upper-latin;
+    margin-left: 40px;
+
+}
     
 
     
