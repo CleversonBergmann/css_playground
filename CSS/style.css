@@ -1,15 +1,6 @@
 
 
-h1 {
-    color: rgb(132, 0, 255);
-    font-size: 3rem;
-    background-color: royalblue;
-    /*border: 9px dotted gray */
-    border-width: 9px; 
-    border-style: dotted;
-    border-color: grey;
-    width: 50%;
-}
+
 
 h2 {
     font-family: 'Caveat', cursive , sans-serif ;
@@ -47,6 +38,17 @@ ol {
 }
 #titulo-principal {
     margin-left: 5rem;
+}
+
+/* Explicando cascade e especificidade */
+.titulo-pagina {
+    font-size: 5rem;
+    border: 5px solid red;
+    color: red
+} 
+.titulo {
+    border-style: dashed;
+    color: green
 }
     
 
