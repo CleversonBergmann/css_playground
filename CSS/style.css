@@ -41,15 +41,41 @@ ol {
 }
 
 /* Explicando cascade e especificidade */
+
+/* 0 - 2 - 0 */
+.titulo.titulo-pagina{
+    color: purple;
+}
+/* 1 - 0 - 0 */
+#titulo-principal {
+    color: aquamarine;
+}
+
+/* 0 - 1 - 0 */
 .titulo-pagina {
     font-size: 5rem;
     border: 5px solid red;
-    color: red
+    color: red;
+    margin-left: 4rem
 } 
+/* 0 - 1 - 0 */
 .titulo {
     border-style: dashed;
-    color: green
+    color: green;
+    margin-left: 0rem;
 }
+/*  0 - 0 - 1 */
+h1{
+    color: blue ;
+    /* 1 - 0 - 0 - 1 */
+    /*  color: blue !important; */
+}
+
+/* 
+Regra de Especificidade:
+
+0 - 2 - 0
+*/
     
 
     
