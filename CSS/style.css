@@ -13,13 +13,8 @@ p {
     color: white;
 }
 
-span {
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: yellow;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
+
+
 
 ul {
     font-size: 50px;
@@ -139,6 +134,9 @@ Regra de Especificidade:
             border: 2px dashed purple;
             background-color: grey;
             margin-bottom: 20px;
+            display: inline-block;
+            font-size: 30px;
+            min-width: 200px;
         }
 
         .menu-item:last-child {
@@ -156,5 +154,37 @@ Regra de Especificidade:
         .menu-item:nth-child ( n + 2 ) {
             font-weight: bold;
         }
+
+        .bloco-inicial {
+            font-size: 50px;
+            background-color: #c86d04 ;
+            margin-bottom: 20px;
+            display: block; /* por padrão div é block */
+            width: 500px;
+
+        }
+
+        .span-inicial {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: yellow;
+            text-decoration: underline;
+            text-transform: uppercase;
+            display: inline; /* por padrão span é inline */
+            width: 500px; /*ignorado por elemento inline */
+            height: 500px;/*ignorado por elemento inline */
+        }
+
+        .bloco-escondido {
+            display: none;
+
+        }
+
+        /*elementos que são por default inline
+        <span>
+        <a>
+        <strong>
+        <em>
+        */
         
         
