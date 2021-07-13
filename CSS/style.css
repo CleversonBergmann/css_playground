@@ -10,6 +10,7 @@ html {
 
 body { 
 margin: 0;
+background-color: white;
 }
 
 /*h2 {
@@ -334,4 +335,51 @@ Regra de Especificidade:
             bottom: 20px;
             right: 30px;
         }
+
+        .wrapper-5 {
+            width: 50%;
+        }
+
+        .resizable-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                background-color: red;
+            } 
+         }
+
+         @media (max-width: 1024px) {
+            body {
+                background-color: green;
+            } 
+            .servico {
+                width: 40%;
+                margin-left: 5%;
+            }
+         }
+
+        @media (max-width: 760px) {
+           body {
+               background-color: blue;
+           } 
+           .resizable-image {
+               display: none;
+           }
+           .servico {
+               width: 100%;
+               background-color: aquamarine;
+
+           }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: yellow;
+            } 
+         }
+
+
        
